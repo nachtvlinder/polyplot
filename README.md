@@ -15,4 +15,4 @@ polyplot.plot_polynomial(coeffs, x_test, y_test, original_data=True) # x, y and 
 ```
 
 ## Example output
-- [ ] Paste image here
+![polyplot.jpg](polyplot.jpg)
