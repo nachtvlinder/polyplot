@@ -53,7 +53,7 @@ def make_polynomial(x, coeffs):
     return y
 
 
-def plot_polynomial(coeffs, x=None, y=None, original_data=False):
+def plot_polynomial(coeffs, x=None, y=None, original_data=False, save=False):
     """
     Plots a polynomial using matplotlib.
     Requires the functions get_coeffs and make_polynomials.
@@ -77,4 +77,6 @@ def plot_polynomial(coeffs, x=None, y=None, original_data=False):
     plt.plot(xplot, make_polynomial(xplot, coeffs))
     if original_data==True:
         plt.scatter(x,y, color='orange')
+    if save==True:
+        plt.savefig("polyplot.jpg")
     plt.show()
