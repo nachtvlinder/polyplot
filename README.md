@@ -9,9 +9,14 @@ you want to use it in (.ipynb, .py,...)
 ```python
 import plot_polynomial as polyplot
 
-coeffs = polyplot.get_coeffs(polynomial_regression) # polynomial_regression is an sklearn pipeline here
-polyplot.plot_polynomial(coeffs, x_test, y_test, original_data=True) # x, y and original_data are optional
-# To plot data (x,y) original_data must be set to true
+# polynomial_regression is an sklearn pipeline here
+coeffs = polyplot.get_coeffs(polynomial_regression)
+
+# x, y, save and original_data are optional
+polyplot.plot_polynomial(coeffs, x_test, y_test, original_data=True, save=False)
+
+# To plot data using both x and y parameters, set original_data=True
+# To save your figure to a file named polyplot.png set save=True
 ```
 
 ## Example output
